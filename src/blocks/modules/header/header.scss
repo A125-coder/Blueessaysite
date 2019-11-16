@@ -8,12 +8,12 @@
         height: 100px;
         border-radius: 50%;
     }
-    .color:hover{
-        background-color: $l3-p4;
+    .col-12:hover{
+        background-color: $l1-p4;
         cursor: pointer;
     }
-    .color p{
-        font-family: Poppins-SemiBold;
+    p{
+        font-family: Poppins-Regular;
     }
     .p-1{
         background-color: $p-1;
@@ -103,17 +103,23 @@
         @include fonts(35px,Poppins-Bold,700,$d3-p4);
     }
 }
+p{
+    font-family: Poppins-Regular;
+}
 
 .headers{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin-bottom: 50px;
-    align-items: center;
-    padding-right: 200px;
+    align-items: flex-start;
 
- p{
+p{   
     padding-right: 150px;
+} 
+.hover{
+    padding: 0 20px;
 }
+
 
 h1{
     @include fonts(35px,Poppins-Bold,900,$d3-p4);
@@ -133,4 +139,81 @@ h5{
 h6{
     @include fonts(15px,Poppins-Medium,400,$d3-p4);
 }
+}
+.hover:hover{
+    color: white;
+    background-color: $p-1;
+    cursor: pointer;
+}
+.p{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    margin-right: 50px;
+p{
+    @include fonts (14px,Poppins-Regular,100,$d1-p4)
+}
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    ul{
+list-style-type: none;
+list-style-position: inside;
+line-height: 30px;
+}
+i{
+color: $p-1;
+padding-right: 10px;
+}
+li{
+    @include fonts (15px,Poppins-Medium,500,$d1-p4);
+}
+}
+.p2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-right: 50px;
+
+    p{
+        @include fonts(20px,Poppins-Medium,500,$d1-p4);
+    }
+}
+
+.quote{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-left: 3px solid $p-1;
+    background-color: $l2-p1;
+    margin-left: 20px;
+
+    p{
+        @include fonts (17px,Poppins-Regular,100,$d1-p1);
+    }
+}
+input{
+    width: 250px;
+    height: 50px;
+}
+.blue:hover{
+    border: 2px solid $l1-p1;
+}
+.col-3{
+    padding-bottom: 20px;
+}
+.form-row{
+    padding-left: 10px;
+    margin-right: 20px;
 }
