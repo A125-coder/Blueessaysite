@@ -15,90 +15,6 @@
     p{
         font-family: Poppins-Regular;
     }
-    .p-1{
-        background-color: $p-1;
-    }
-    .p-2{
-        background-color: $p-2;
-    }
-    .p-3{
-        background-color: $p-3;
-    }
-    .p-4{
-        background-color: $p-4;
-    }
-    .l1-1{
-        background-color: $l1-p1;
-    }
-    .l2-1{
-        background-color: $l2-p1;
-    }
-    .l3-1{
-        background-color: $l3-p1;
-    }
-    .d1-1{
-        background-color: $d1-p1;
-    }
-    .d2-1{
-        background-color: $d2-p1;
-    }
-    .d3-1{
-        background-color: $d3-p1;
-    }
-    .l1-2{
-        background-color: $l1-p2;
-    }
-    .l2-2{
-        background-color: $l2-p2;
-    }
-    .l3-2{
-        background-color: $l3-p2;
-    }
-    .d1-2{
-        background-color: $d1-p2;
-    }
-    .d2-2{
-        background-color: $d2-p2;
-    }
-    .d3-2{
-        background-color: $d3-p2;
-    }
-    .l1-3{
-        background-color: $l1-p3;
-    }
-    .l2-3{
-        background-color: $l2-p3;
-    }
-    .l3-3{
-        background-color: $l3-p3;
-    }
-    .d1-3{
-        background-color: $d1-p3;
-    }
-    .d2-3{
-        background-color: $d2-p3;
-    }
-    .d3-3{
-        background-color: $d3-p3;
-    }
-    .l1-4{
-        background-color: $l1-p4;
-    }
-    .l2-4{
-        background-color: $l2-p4;
-    }
-    .l3-4{
-        background-color: $l3-p4;
-    }
-    .d1-4{
-        background-color: $d1-p4;
-    }
-    .d2-4{
-        background-color: $d2-p4;
-    }
-    .d3-4{
-        background-color: $d3-p4;
-    }
     h1{
         @include fonts(35px,Poppins-Bold,700,$d3-p4);
     }
@@ -118,26 +34,6 @@ p{
 } 
 .hover{
     padding: 0 20px;
-}
-
-
-h1{
-    @include fonts(35px,Poppins-Bold,900,$d3-p4);
-}
-h2{
-    @include fonts(33px,Poppins-Medium,400,$d2-p4);
-}
-h3{
-    @include fonts(27px,Poppins-SemiBold,500,$d3-p4);
-}
-h4{
-    @include fonts(22px,Poppins-Medium,400,$d3-p4);
-}
-h5{
-    @include fonts(17px,Poppins-Medium,400,$d3-p4);
-}
-h6{
-    @include fonts(15px,Poppins-Medium,400,$d3-p4);
 }
 }
 .hover:hover{
@@ -210,10 +106,114 @@ input{
 .blue:hover{
     border: 2px solid $l1-p1;
 }
+.blue2:active{
+    border: 2px solid $l1-p1;
+}
 .col-3{
     padding-bottom: 20px;
 }
 .form-row{
     padding-left: 10px;
     margin-right: 20px;
+}
+.form-check{
+    width: 150px;
+    padding-top: 50px;
+    
+}
+.par{
+    display: flex;
+    align-self: center;
+}
+.orange{
+    background-color: $p-2;
+}
+.btn-outline-danger{
+    color:$p-2;
+}
+.tabs{
+    padding-right: 50px;
+}
+.pagin{
+    padding-right: 350px;
+}
+.pagination{
+    padding-right: 50px;
+}
+.pagination1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+
+.page-item1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $d1-p4;
+    margin-right: 10px;
+}
+
+.page-item1:hover{
+    background-color: #fff;
+    border: 3px solid $p-1;
+    cursor: pointer;
+}
+}
+.popup{
+    border: 1px solid $d3-p4;
+    p{
+    padding: 10px;
+}
+}
+
+.icons{
+    padding-left: 100px;
+    i{
+        padding-right: 20px;
+        color: $l1-p4;
+    }
+}
+.icons2{
+    padding-left: 100px;
+    i{
+        padding-right: 20px;
+    }
+    .fa-facebook-f{
+        color: blue;
+    }
+    .fa-pinterest-p,.fa-google-plus-g{
+        color: red;
+    }
+}
+.ic{
+    background-color: $p-1;
+    height: 200px;
+.icons3{
+    padding: 10px;
+    i{
+        justify-items: center;
+        padding-right: 20px;
+        color: #fff;
+        .circle{
+            height: 40px;
+            width: 40px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+    }
+}
+.icons4{
+    padding: 10px;
+    i{
+        padding-right: 20px;
+        color: #fff;
+    }
+    .circle1{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $d2-p1;
+    }
+}
 }
