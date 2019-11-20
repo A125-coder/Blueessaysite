@@ -135,14 +135,12 @@
                 <div class="col-3">
                 <p>Number of pages <span class="hover">Number of pages</span></p>
                 <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text">-</span>
-                                </div>
-                                <input type="text" class="form-control" aria-label="Number" placeholder="2">
-                                <div class="input-group-append">
-                                  <span class="input-group-text">+</span>
-                                </div>
-                              </div>
+                        <div class="input-group-prepend" id="button-addon3">
+                          <button class="btn btn-outline-secondary" type="button">-</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="2" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                      </div>
                 </div>
                 <div class="col-3">
                     <p>Dropdown normal <span class="hover">Dropdown normal</span></p>
@@ -171,18 +169,57 @@
     </div>
                         <div class="container">
                                 <div class="row">
-                                    <input id="checkbox" type="checkbox"/>
-            <label for="checkbox">checkbox</label>
-            <div>
-            </div>
-            <div class="col-12">
-                <input id="radio1" type="radio" name="radio"/>
-                <label for="radio1">radio option #1</label>
-            <div>
-            </div>
-                <input id="radio2" type="radio" name="radio"/>
-                <label for="radio2">radio option #2</label>
-            </div>
+                                <div class="col-12">
+                            <div class="col-3">
+                         <div class="custom-control custom-checkbox mr-sm-2">
+                             <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                             <label class="custom-control-label" for="customControlAutosizing">Normal</label>
+                                                        </div>
+                                                      </div>
+                  <div class="col-3">
+                     <div class="custom-control custom-checkbox mr-sm-2">
+                   <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                        <label class="custom-control-label" for="customControlAutosizing">Hover</label>
+                                                                                       </div>
+                                                                                     </div>
+                   <div class="col-3">
+                       <div class="custom-control custom-checkbox mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing" checked>
+                <label class="custom-control-label" for="customControlAutosizing">Selected</label>
+                                                                                                                       </div>
+        </div>
+        <div class="col-3">
+                <div class="custom-control custom-checkbox mr-sm-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing" checked disabled>
+                    <label class="custom-control-label" for="customControlAutosizing">Disabled</label>
+                                               </div>
+                                             </div>
+                                                        </div>
+                        <div class="col-12">
+               <div class="col-3">
+                <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Normal</label>
+                      </div>
+                </div>
+                <div class="col-3">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Hover</label>
+                      </div>
+                </div>
+                <div class="col-3">
+                 <div class="custom-control custom-radio">
+               <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                  <label class="custom-control-label" for="customRadio1">Selected</label>
+                              </div>
+                                </div>
+                                <div class="col-3">
+                <div class="custom-control custom-radio custom-control-inline">
+                   <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" checked disabled>
+                       <label class="custom-control-label" for="customRadioInline2">Disabled</label>
+                                              </div>
+                                          </div>          
                 </div>
                         </div>
                 <div class="container">
@@ -290,46 +327,71 @@
                         </div>
                         <div class="container">
                                 <h2> 05  Tabs</h2>
-                                <div class="row">
-                                        <div class="tab">
-                                    <p class="col-1 tabs">Tabname1</p>
-                                    <p class="col-1 tabs">Tabname2</p>
-                                    <p class="col-1 tabs">Tabname3</p>
-                                    <p class="col-1 tabs">Tabname4</p>
-                                    </div>
-                                    </div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                 <li class="nav-item">
+                 <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tabname1</a>
+                                                </li>
+                   <li class="nav-item">
+                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tabname2</a>
+                                                </li>
+                 <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tabname3</a>
+                                                </li>
+                 <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tabname4</a>
+                                                </li>
+                                              </ul>
+                 <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Placeholder name</div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Placeholder name</div>
+                   <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Placeholder name</div>
+                                              </div>
                                     </div>
                                     <div class="container">
                                 <h2> 06  Misc. Elements</h2>
+                                <p>Pagination</p>
                                 <div class="row">
-                                <p class="pagin">Pagination</p>
-                                <p>Dotted pagination</p>
-                                </div>
-                                <div class="row">
-               <nav aria-label="Page navigation example">
-                     <ul class="pagination">
-                     <li class="page-item">
-                       <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&#60;</span>
+                     <ul class="col-6 pagination">
+                     <li>
+                       <a class="arrow" href="#">
+                          <span><</span>
                                        </a>
                                     </li>
-                     <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">5</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item"><a class="page-link" href="#">8</a></li>
-                      <li class="page-item"><a class="page-link" href="#">9</a></li>
-                      <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                           <span aria-hidden="true">&#62;</span>
+                                    <div class="a">
+                                    <a href="#"><li class="page-item">1</li></a>
+                                    </div>
+                                    <div class="a">
+                                    <a href="#"><li class="page-item">2</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">3</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">4</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">5</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">6</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">7</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">8</li></a>
+                                </div>
+                                <div class="a">
+                                    <a href="#"><li class="page-item">9</li></a>
+                                </div>
+                      <li>
+                      <a class="arrow" href="#">
+                           <span>></span>
                                </a>
                                 </li>
                                    </ul>
-                                      </nav>
-                                    <ul class="pagination1">
+                                    <ul class="col-6 pagination1">
+                                                <p>Dotted pagination</p>
                                             <a href="#"><li class="page-item1"></li></a>
                                             <a href="#"><li class="page-item1"></li></a>
                                             <a href="#"><li class="page-item1"></li></a>
@@ -362,25 +424,33 @@
                                     </div>
                                     <div class="col-4 ic">
                                         <div class="icons3">
+                                                        <div class="circle">
                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <div class="circle"></div>
+                                            </div>
+                                            <div class="circle">
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <div class="circle"></div>
+                                                </div>
+                                                <div class="circle">
                                                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                <div class="circle"></div>
+                                                </div>
+                                                <div class="circle">
                                                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                                                <div class="circle"></div>
+                                                </div>
                                             </div>
                                                                 
                                         <div class="icons4">
+                                                        <div class="circle1">
                                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <div class="circle1"></div>
+                                                </div>
+                                                <div class="circle1">
                                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <div class="circle1"></div>
+                                                </div>
+                                                <div class="circle1">
                                                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                <div class="circle1"></div>
+                                                </div>
+                                                <div class="circle1">
                                                 <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                                                <div class="circle1"></div>
+                                                </div>
                                                                 </div>
                                                                 </div>
                                     </div>

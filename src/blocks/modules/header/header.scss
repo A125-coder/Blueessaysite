@@ -147,66 +147,72 @@ button.orange2:hover{
     background-color: $l1-p2;
 }
 button.bluebutton{
-    @include button(100%,50px,$p-1,transparent); 
+    @include button(100%,50px,$d1-p1,transparent); 
 }
 button.bluebutton:hover{
     background-color: $l1-p1;
 }
 button.bluebutton2{
-    @include button(100%,30px,$p-1,transparent); 
+    @include button(100%,30px,$d1-p1,transparent); 
 }
 button.bluebutton2:hover{
     background-color: $l1-p1;
 }
 button.bluebutton3{
-    color:$p-1;
-    border: solid 1px $l1-p1;
+    color:$d1-p1;
+    border: solid 1px $d1-p1;
 }
 button.bluebutton3:hover{
     background-color: $l1-p1;
     border: solid 1px $l1-p1
 }
 .button-blue{
-    @include button(100%,50px,$p-1,transparent); 
+    @include button(100%,50px,$d1-p1,transparent); 
 }
 button.button-blue:hover{
     background-color: $l1-p1;
 }
 .button-blue2{
-    @include button(100%,30px,$p-1,transparent); 
+    @include button(100%,30px,$d1-p1,transparent); 
 }
 button.button-blue2:hover{
     background-color: $l1-p1;
 }
 .btn-outline-primary{
-    color:$p-1;
-    border: solid 1px $p-1;
+    color:$d1-p1;
+    border: solid 1px $d1-p1;
 }
 .btn-outline-primary:hover{
     color:white;
     border: solid 1px $l1-p1;
     background-color: $l1-p1;
 }
-
-.tab{
+.pagination{
+    padding-right: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    .tabs{
-        color:$l1-p4; 
-        border: 1px solid #fff;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        color: $p-4;
     }
-}
-.tabs:hover{
-    color:$p-2;
-    cursor: pointer;
-    border-bottom: 1px solid $p-2;
-}
-.pagin{
-    padding-right: 350px;
-}
-.pagination{
-    padding-right: 50px;
+    .page-item{
+        position: absolute;
+        left: 7px;
+    }
+    :hover{
+        color: #fff;
+    }
+    .a{
+        position: relative;
+        width: 25px;
+            height: 25px;
+            border-radius: 50%;
+    }
+    .a:hover{
+        background-color: $p-1;
+    }
+
 }
 .pagination1{
     list-style-type: none;
@@ -229,7 +235,7 @@ button.button-blue2:hover{
 }
 }
 .popup{
-    border: 1px solid $d3-p4;
+    border: 1px solid $l2-p4;
     p{
     padding: 10px;
 }
@@ -248,7 +254,7 @@ button.button-blue2:hover{
         padding-right: 20px;
     }
     .fa-facebook-f{
-        color: blue;
+        color: $d2-p1;
     }
     .fa-pinterest-p,.fa-google-plus-g{
         color: red;
@@ -266,7 +272,8 @@ button.button-blue2:hover{
         padding-right: 20px;
         color: #fff;
         position: absolute;
-        top: 20px;
+        top: 12px;
+        left: 12px;
         z-index: 1;
     }
     .circle{
@@ -286,7 +293,8 @@ button.button-blue2:hover{
         padding-right: 20px;
         color: #fff;
         position: absolute;
-        top:80px;
+        top: 12px;
+        left: 12px;
         z-index: 1;
     }
     .circle1{
@@ -298,60 +306,22 @@ button.button-blue2:hover{
     }
 }
 }
-label, input[type="radio"], input[type="checkbox"] {
-    line-height: 2.1ex;
- }
-  
- input[type="radio"],
- input[type="checkbox"] {
-     position: absolute;
-     left: -999em;
- }
-  
- input[type="radio"] + label,
- input[type="checkbox"] + label {
-     position: relative;
-     overflow: hidden;
-     cursor: pointer;
- }
-  
- input[type="radio"] + label::before,
- input[type="checkbox"] + label::before {
-    content: "";
-    display: inline-block;
-    vertical-align: -25%;
-    height: 2ex;
-    width: 2ex;
-    background-color: white;
-    border: 1px solid rgb(166, 166, 166);
-    border-radius: 4px;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
-    margin-right: 0.5em;
- }
-  
- input[type="radio"]:checked + label::before {
-    background: radial-gradient(circle at center, $p-1 .6ex, white .7ex);
- }
-  
- input[type="radio"] + label::before {
-    border-radius: 50%;
- }
-  
- input[type="checkbox"]:checked + label::after {
-    content: '';
-    position: absolute;
-    width: 1.2ex;
-    height: 0.4ex;
-    background: rgba(0, 0, 0, 0);
-    top: 0.9ex;
-    left: 0.4ex;
-    border: 3px solid $p-1;
-    border-top: none;
-    border-right: none;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
- }
- 
+.custom-control-input:hover{
+    box-shadow: 5px 5px 5px $p-1;
+}
+#myTab{
+    padding-bottom: 30px;
+}
+.nav-link{
+    font-family: $font-base;
+    color:$l1-p4; 
+    border: none;
+}
+.nav-link:hover{
+    color:$p-2;
+    cursor: pointer;
+}
+#myTabContent{
+    font-family: $font-base;
+    color:$l1-p4; 
+}
