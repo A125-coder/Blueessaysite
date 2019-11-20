@@ -1,24 +1,39 @@
-.color{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    align-items: center;
-    div{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
-    .col-12:hover{
-        background-color: $l1-p4;
-        cursor: pointer;
-    }
-    p{
-        font-family: Poppins-Regular;
-    }
-    h1{
-        @include fonts(35px,Poppins-Bold,700,$d3-p4);
-    }
+.yellow{
+    color: $p-3;
+    font-family: $font-sm; 
+    font-size: 15px;
 }
+.tiny{
+    font-size: 15px;
+    color: #fff;
+}
+.open{
+    font-size: 10px;
+    font-family: OpenSans;
+    color: #fff;
+}
+.img{
+    padding-left: 40px;
+}
+/*.burger{
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.burger::before{
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.burger::after{
+    height: 3px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+}*/
 p{
     font-family: Poppins-Regular;
 }
@@ -126,13 +141,17 @@ input{
     align-self: center;
 }
 button.orange{
-    @include button(100%,50px,$p-2,transparent); 
+    @include button(100px,50px,$p-2,transparent); 
+    font-size: 13px;
+    font-family: $font-base;
 }
 button.orange:hover{
     background-color: $l1-p2;
 }
 button.orange2{
-    @include button(100%,30px,$p-2,transparent); 
+    @include button(100%,40px,$p-2,transparent);
+    font-size: 13px;
+    font-family: $font-base; 
 }
 button.orange2:hover{
     background-color: $l1-p2;
@@ -147,13 +166,21 @@ button.orange2:hover{
     background-color: $l1-p2;
 }
 button.bluebutton{
-    @include button(100%,50px,$d1-p1,transparent); 
+    @include button(100px,50px,$d1-p1,transparent); 
+    font-size: 13px;
+    font-family: $font-base;
 }
 button.bluebutton:hover{
     background-color: $l1-p1;
 }
+button.bluebutton:checked{
+    background-color: $l1-p1;
+    box-shadow: 10px 10px 10px $l1-p1;
+}
 button.bluebutton2{
-    @include button(100%,30px,$d1-p1,transparent); 
+    @include button(120px,30px,$p-1,transparent); 
+    font-family: $font-base;
+    font-size: 12px;
 }
 button.bluebutton2:hover{
     background-color: $l1-p1;

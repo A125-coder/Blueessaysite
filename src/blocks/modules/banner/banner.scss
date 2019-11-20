@@ -1,0 +1,27 @@
+.bg-banner{
+.banner{
+    position: absolute;
+    top: -207px;
+    right: -400px;
+    z-index: -1;
+}
+.blueessay{
+    color: $p-1;
+}
+h1{
+    padding-top: 130px;
+}
+ul{
+    border-bottom: 1px solid $l1-p4;
+    list-style-type: none;
+    padding-top: 30px;
+    li{
+        width: 50px;
+        height: 3px;
+    }
+    li:hover{
+        background-color: $p-2;
+        cursor: pointer;
+    }
+}
+}
