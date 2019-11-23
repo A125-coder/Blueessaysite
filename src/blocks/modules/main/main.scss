@@ -1,0 +1,126 @@
+.rectangle{
+    width: 425px;
+    height: 415px;
+    background-color: $l3-p1;
+    position: relative;
+    margin-top: 130px;
+    img{
+        position: absolute;
+        top: 65px;
+        left: 140px;
+    }
+    .w{
+     @include fonts (27px,$font-b,700,$d1-p1);
+     position: absolute;
+     top: 85px;
+     left: 214px;
+    }
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 170px;
+    margin-bottom: 50px;
+    .site{
+        @include fonts (15px,$font-sm,500,$p-1);
+    }
+} 
+.main{
+    width: 100%;
+    background-color: $p-1;
+    background-image: url(../../../img/Vector.png);
+    position: relative;
+    margin-bottom: 80px;
+    .column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 360px;
+        background-color: #fff;
+        margin-bottom: 80px;
+    }
+    .circle{
+        position: absolute;
+        top: 60px;
+    left: 115px;
+    .half{
+        width: 100px;
+        height: 50px; /* as the half of the width */
+        background-color: $p-2;
+        border-top-left-radius: 60px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 60px; /* 100px of height + 10px of border */
+        border: 1px solid transparent;
+        border-bottom: 0;
+        transform: rotate(90deg);
+        }
+    .half2{
+        width: 100px;
+        height: 50px; /* as the half of the width */
+        background-color: $l1-p2;
+        border-top-left-radius: 60px;  /* 100px of height + 10px of border */
+        border-top-right-radius: 60px; /* 100px of height + 10px of border */
+        border: 1px solid transparent;
+        border-bottom: 0;
+        transform: rotate(270deg);
+        position: absolute;
+        top: 0;
+        left: -49px;
+        }
+    }
+    img{
+        position: absolute;
+        top: 70px;
+    left: 110px;
+    z-index: 1;
+    }
+    .img1{
+        position: absolute;
+        top: 60px;
+    left: 105px;
+    z-index: 1;
+    }
+    h5{
+        text-align: center;
+        padding: 120px 0 10px 0;
+    }
+    p{
+        text-align: center;
+    }
+    button{
+        margin-bottom: 80px;
+    }
+}
+.site2{
+    @include fonts (15px,$font-base,100,$p-1);
+    text-align: center;
+}
+.procedure{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.step{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    height: 360px;
+    background-color: #fff;
+    margin-bottom: 80px;
+    p{
+        text-align: center;
+    }
+    h5{
+        padding: 20px 0;
+    }
+}
+.main2{
+    width: 100%;
+    background-color: $p-1;
+    background-image: url(../../../img/Cloud.png);
+    margin-bottom: 80px;
+    p{
+        @include fonts (20px,$font-base,100,#fff);
+        text-align: center; 
+    }
+}

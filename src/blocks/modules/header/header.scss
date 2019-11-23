@@ -15,25 +15,33 @@
 .img{
     padding-left: 40px;
 }
-/*.burger{
+.burger{
+    content: "";
+    display: block;
+    width: 30px;
     height: 3px;
     background-color: #fff;
     position: relative;
+    top:0px;
 }
 .burger::before{
+    content: "";
+    display: block;
+    width: 30px;
     height: 3px;
     background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top:9px;
 }
 .burger::after{
+    content: "";
+    display: block;
+    width: 30px;
     height: 3px;
     background-color: #fff;
-    top: 0;
-    left: 0;
-    position: absolute;
-}*/
+    position: relative;
+    top:-12px;
+}
 p{
     font-family: Poppins-Regular;
 }
@@ -140,80 +148,7 @@ input{
     display: flex;
     align-self: center;
 }
-button.orange{
-    @include button(100px,50px,$p-2,transparent); 
-    font-size: 13px;
-    font-family: $font-base;
-}
-button.orange:hover{
-    background-color: $l1-p2;
-}
-button.orange2{
-    @include button(100%,40px,$p-2,transparent);
-    font-size: 13px;
-    font-family: $font-base; 
-}
-button.orange2:hover{
-    background-color: $l1-p2;
-}
-.btn-outline-danger{
-    color:$p-2;
-    border: solid 1px $p-2;
-}
-.btn-outline-danger:hover{
-    color:white;
-    border: solid 1px $l1-p2;
-    background-color: $l1-p2;
-}
-button.bluebutton{
-    @include button(100px,50px,$d1-p1,transparent); 
-    font-size: 13px;
-    font-family: $font-base;
-}
-button.bluebutton:hover{
-    background-color: $l1-p1;
-}
-button.bluebutton:checked{
-    background-color: $l1-p1;
-    box-shadow: 10px 10px 10px $l1-p1;
-}
-button.bluebutton2{
-    @include button(120px,30px,$p-1,transparent); 
-    font-family: $font-base;
-    font-size: 12px;
-}
-button.bluebutton2:hover{
-    background-color: $l1-p1;
-}
-button.bluebutton3{
-    color:$d1-p1;
-    border: solid 1px $d1-p1;
-}
-button.bluebutton3:hover{
-    background-color: $l1-p1;
-    border: solid 1px $l1-p1
-}
-.button-blue{
-    @include button(100%,50px,$d1-p1,transparent); 
-}
-button.button-blue:hover{
-    background-color: $l1-p1;
-}
-.button-blue2{
-    @include button(100%,30px,$d1-p1,transparent); 
-}
-button.button-blue2:hover{
-    background-color: $l1-p1;
-}
-.btn-outline-primary{
-    color:$d1-p1;
-    border: solid 1px $d1-p1;
-}
-.btn-outline-primary:hover{
-    color:white;
-    border: solid 1px $l1-p1;
-    background-color: $l1-p1;
-}
+
 .pagination{
     padding-right: 100px;
     display: flex;
