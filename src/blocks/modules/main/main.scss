@@ -120,8 +120,130 @@
     background-image: url(../../../img/Cloud.png);
     background-repeat: no-repeat;
     margin-bottom: 80px;
-    p{
+    height: 500px;
+    justify-content: flex-start;
+    .p{
         @include fonts (20px,$font-base,100,#fff);
         text-align: center; 
     }
+    .off{
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        flex-wrap: wrap;
+        box-shadow: 0 10px 10px $l1-p4;
+        .sale{ 
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            padding: 25px;
+        .percent{
+            @include fonts (32px,$font-b,500,$p-2)
+        }
+        p{
+        @include fonts (15px,$font-base,100,$d1-p4);
+        }
+        .span{
+            @include fonts (18px,$font-b,500,$p-1);
+        }
+    }
+        .hl{
+            background-color: $l3-p4;
+            width: 90%;
+        }
+        .vl{
+            transform: rotate(90deg);
+            background-color: $l3-p4;
+            width: 90%;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .bg-blue{
+        background-color: $p-1;
+        padding: 20px;
+        left: -95px;
+        .cupon{
+            border: dashed 2px $d1-p1;
+            border-radius: 20px;
+            padding: 20px;
+            .italic{
+                @include fonts(17px,OpenSans-Italic,100,#fff);
+                text-align: center;
+                padding-top: 50px;
+            }
+            .bold{
+                @include fonts(17px,OpenSans-BoldItalic,500,#fff);
+            }
+        }
+        .scissors{
+            border: dashed 2px #fff;
+            border-radius: 10px;
+            background-color: $d1-p1;
+            padding: 10px;
+            position: relative;
+            img{
+                position: absolute;
+                top: -15px;
+                left: -10px;            
+            }
+            .baloon{
+                position: absolute;
+                top: 200px;
+                left: 260px;
+            }
+            .stars{
+                position: absolute;
+                top: -15px;
+                left: 215px;
+            }
+        }
+        .white-p{
+            padding-top: 10px;
+            text-align: left;
+            @include fonts(28px,$font-base,400,#fff);
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
+        .bg-yellow{
+            padding-top: 10px;
+            @include fonts(55px,$font-b,400,$p-3);
+            text-align: center;
+        }
+    }
+}
+.clients{
+    padding-top: 280px;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+.circle3{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $d1-p3;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        top: 16px;
+    left: 15px;
+    }  
+}
+p{
+    text-align: center;
+    @include fonts(14px,$font-base,100,$p-4);
+}
+.span{
+    @include fonts (18px,$font-b,500,$d1-p1);
+}
+.fading{
+    @include fonts(14px,$font-base,100,$l1-p4);
+    padding-bottom: 50px;
+}
 }

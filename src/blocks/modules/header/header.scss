@@ -10,7 +10,7 @@
 .open{
     font-size: 10px;
     font-family: OpenSans;
-    color: #fff;
+    color: #fff;  
 }
 .img{
     padding-left: 40px;
@@ -59,23 +59,6 @@ p{
     padding: 0 20px;
 }
 }
-.hover:hover{
-    color: white;
-    background-color: $p-1;
-    cursor: pointer;
-}
-.p{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    align-items: stretch;
-    flex-wrap: wrap;
-    padding-right: 50px;
-    margin-right: 50px;
-p{
-    @include fonts (14px,Poppins-Regular,100,$d1-p4)
-}
-}
 .list{
     display: flex;
     justify-content: space-around;
@@ -107,21 +90,6 @@ li{
         @include fonts(20px,Poppins-Medium,500,$d1-p4);
     }
 }
-
-.quote{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    align-items: center;
-    flex-wrap: nowrap;
-    border-left: 3px solid $p-1;
-    background-color: $l2-p1;
-    margin-left: 20px;
-
-    p{
-        @include fonts (17px,Poppins-Regular,100,$d1-p1);
-    }
-}
 input{
     width: 250px;
     height: 50px;
@@ -148,61 +116,6 @@ input{
     display: flex;
     align-self: center;
 }
-
-.pagination{
-    padding-right: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    a{
-        text-decoration: none;
-        color: $p-4;
-    }
-    .page-item{
-        position: absolute;
-        left: 7px;
-    }
-    :hover{
-        color: #fff;
-    }
-    .a{
-        position: relative;
-        width: 25px;
-            height: 25px;
-            border-radius: 50%;
-    }
-    .a:hover{
-        background-color: $p-1;
-    }
-
-}
-.pagination1{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-
-.page-item1{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: $d1-p4;
-    margin-right: 10px;
-}
-
-.page-item1:hover{
-    background-color: #fff;
-    border: 3px solid $p-1;
-    cursor: pointer;
-}
-}
-.popup{
-    border: 1px solid $l2-p4;
-    p{
-    padding: 10px;
-}
-}
-
 .icons{
     padding-left: 100px;
     i{
@@ -221,69 +134,4 @@ input{
     .fa-pinterest-p,.fa-google-plus-g{
         color: red;
     }
-}
-.ic{
-    background-color: $p-1;
-    height: 200px;
-.icons3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    i{
-        padding-right: 20px;
-        color: #fff;
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        z-index: 1;
-    }
-    .circle{
-        height: 40px;
-        width: 40px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        position: relative;
-    }
-}
-.icons4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    i{
-        padding-right: 20px;
-        color: #fff;
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        z-index: 1;
-    }
-    .circle1{
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        background-color: $d2-p1;
-        position: relative;
-    }
-}
-}
-.custom-control-input:hover{
-    box-shadow: 5px 5px 5px $p-1;
-}
-#myTab{
-    padding-bottom: 30px;
-}
-.nav-link{
-    font-family: $font-base;
-    color:$l1-p4; 
-    border: none;
-}
-.nav-link:hover{
-    color:$p-2;
-    cursor: pointer;
-}
-#myTabContent{
-    font-family: $font-base;
-    color:$l1-p4; 
 }
