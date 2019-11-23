@@ -118,6 +118,7 @@
     width: 100%;
     background-color: $p-1;
     background-image: url(../../../img/Cloud.png);
+    background-repeat: no-repeat;
     margin-bottom: 80px;
     p{
         @include fonts (20px,$font-base,100,#fff);
