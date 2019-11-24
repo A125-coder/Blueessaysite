@@ -145,11 +145,11 @@ p{
     color: $p-4;
 }
 .nav{
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 135px;
     background-color: $p-1;
     position: absolute;
     top:130px;
