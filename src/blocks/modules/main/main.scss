@@ -32,8 +32,7 @@
     background-image: url(../../../img/Vector.png);
     position: relative;
     margin-bottom: 80px;
-    .column{
-        display: flex;
+    .column-1{
         flex-direction: column;
         justify-content: center;
         height: 360px;
@@ -71,21 +70,22 @@
     img{
         position: absolute;
         top: 70px;
-    left: 110px;
+    left: 105px;
     z-index: 1;
     }
     .img1{
         position: absolute;
         top: 60px;
-    left: 105px;
+    left: 115px;
     z-index: 1;
     }
     h5{
         text-align: center;
-        padding: 120px 0 10px 0;
+        padding-top: 140px;
     }
     p{
         text-align: center;
+        padding: 20px 0;
     }
     button{
         margin-bottom: 80px;
@@ -214,7 +214,7 @@
     }
 }
 .clients{
-    padding-top: 280px;
+    padding-top: 120px;
 }
 .col-sm-8{
     margin-top: 200px;
