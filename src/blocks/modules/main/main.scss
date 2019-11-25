@@ -115,13 +115,12 @@
     }
 }
 .main2{
-    width: 100%;
     background-color: $p-1;
     background-image: url(../../../img/Cloud.png);
     background-repeat: no-repeat;
     margin-bottom: 80px;
     height: 500px;
-    justify-content: flex-start;
+
     .p{
         @include fonts (20px,$font-base,100,#fff);
         text-align: center; 
