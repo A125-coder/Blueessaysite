@@ -23,6 +23,7 @@
         "lint:style --fix": "stylelint \"src/**/*.scss\" --syntax=scss --fix"
     },
     "devDependencies": {
+        "@architect/sandbox": "^3.4.2",
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "@babel/register": "^7.4.0",
